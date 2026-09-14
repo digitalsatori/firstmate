@@ -1,0 +1,28 @@
+artifact realpath length: 961
+getconf PATH_MAX /: 1024
+declared bound on this host: 4474
+opened real session: http://tonymac-mini.taile2f97c.ts.net:4387/session/0482241190807743
+{"status":"ended"}
+real ended-session envelope: 4223 bytes  (>4096 = the old fixed bound; <declared = must still be held whole)
+
+### A. shipped adapter on that real response
+armed .source present: YES
+no-result: lavish-0482241190807743 (exit 3)
+no-result: lavish-0482241190807743 (exit 3)
+source present after two rounds: YES
+captured results: 0
+wakes published: 0
+
+### B. deliberate break: same real response against a 4096-fixed bound
+257:POLL_HOLD_LIMIT_BYTES=4096
+armed .source present: YES
+not-autohandled: lavish-0482241190807743 (left for the handler; still unacknowledged)
+retired: lavish-0482241190807743 (adapter classified the captured result terminal)
+captured: /private/tmp/fm-live-pathmax.uuVd1I/home-mut/state/procevent-inbox/lavish-0482241190807743.1.result
+source present after the round: NO
+captured results: 1
+wake payloads:
+   check: procevent lavish lavish-0482241190807743 1
+
+### cleanup
+LAB=/private/tmp/fm-live-pathmax.uuVd1I

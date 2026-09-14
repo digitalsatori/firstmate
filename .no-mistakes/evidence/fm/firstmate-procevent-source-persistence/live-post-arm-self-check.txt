@@ -1,0 +1,22 @@
+### open a real Lavish session, arm, then end the session
+session: http://tonymac-mini.taile2f97c.ts.net:4387/session/1d213c9951ba436f
+registered: lavish-1d213c9951ba436f (lavish)
+armed: lavish-1d213c9951ba436f
+artifact: /private/tmp/fm-live-selfcheck.pkP6UD/board.html
+{"status":"ended"}
+
+### the delivered source is picked up by a real supervision cycle
+reconciled: published=0 started=1 stopped=0 uncertain=0 failed=0
+
+### the skill's post-arm self-check block, run verbatim from FM_HOME
+state/procevent/lavish-1d213c9951ba436f.source
+SOURCE                       ADAPTER      OWNER      PENDING
+lavish-1d213c9951ba436f      lavish       none       0
+
+### a broken variant of the same check (pre-fix adapter would have lost it)
+expected failure line for a missing registration:
+ls: state/procevent/lavish-does-not-exist.source: No such file or directory
+the Lavish source is gone - re-arm it before saying the board is monitored
+
+### cleanup
+retired: lavish-1d213c9951ba436f

@@ -1,0 +1,59 @@
+
+### A. REPRODUCTION with the pre-fix adapter (036fec054283882c1cfaa3e66e6f8d16ff4f4b5f)
+pre-fix adapter sha256: a1ac9765ddb8f289
+opened real session: http://tonymac-mini.taile2f97c.ts.net:4387/session/7b8bc698a45d1631
+registered: lavish-7b8bc698a45d1631 (lavish)
+armed: lavish-7b8bc698a45d1631
+artifact: /private/tmp/fm-live-repro.ocvrDz/pre-fix-board.html
+after arm  .source present: YES
+-- the captain ends the session from the browser (same route):
+{"status":"ended"}
+-- one supervision round on the real ended session:
+retired: lavish-7b8bc698a45d1631 (adapter classified the captured result terminal)
+captured: /private/tmp/fm-live-repro.ocvrDz/home-old/state/procevent-inbox/lavish-7b8bc698a45d1631.1.result
+after round .source present: NO
+state/procevent now holds:
+   <ID>.16777239-225718743.last-launch
+wakes published: 0  (the loss was silent)
+
+### B. SAME real experiment with the fixed adapter
+opened real session: http://tonymac-mini.taile2f97c.ts.net:4387/session/ba529213c37e147b
+registered: lavish-ba529213c37e147b (lavish)
+armed: lavish-ba529213c37e147b
+artifact: /private/tmp/fm-live-repro.ocvrDz/fixed-board.html
+after arm  .source present: YES
+-- the captain ends the session from the browser (same route):
+{"status":"ended"}
+-- one supervision round on the real ended session:
+no-result: lavish-ba529213c37e147b (exit 3)
+after round .source present: YES
+captured results: 0
+wakes published: 0
+-- the captain reopens the board and firstmate is still listening:
+  file: /private/tmp/fm-live-repro.ocvrDz/fixed-board.html
+  url: "http://tonymac-mini.taile2f97c.ts.net:4387/session/ba529213c37e147b"
+retired: lavish-ba529213c37e147b
+
+### C. a board file that no longer resolves still ends the source
+not-autohandled: lavish-aa792dec67ba2f0f (left for the handler; still unacknowledged)
+retired: lavish-aa792dec67ba2f0f (adapter classified the captured result terminal)
+captured: /private/tmp/fm-live-repro.ocvrDz/home-gone/state/procevent-inbox/lavish-aa792dec67ba2f0f.1.result
+after round .source present: NO
+wake payloads:
+   check: procevent lavish lavish-aa792dec67ba2f0f 1
+captured envelope:
+   error: "ENOENT: no such file or directory, realpath '/private/tmp/fm-live-repro.ocvrDz/gone-board.html'"
+   code: UNKNOWN
+
+### D. a board that was never opened (no active session) is a quiet absence
+-- real poll answer with no session at all:
+   error: No active Lavish Editor session for this file
+   code: NOT_FOUND
+   help[1]: Run `lavish-axi /private/tmp/fm-live-repro.ocvrDz/never-opened.html` first
+-- one supervision round:
+no-result: lavish-b278f5ecaf070c15 (exit 3)
+after round .source present: YES
+captured results: 0
+wakes published: 0
+
+### LAB=/private/tmp/fm-live-repro.ocvrDz

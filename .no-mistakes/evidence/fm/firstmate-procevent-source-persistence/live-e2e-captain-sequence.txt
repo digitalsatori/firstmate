@@ -1,0 +1,87 @@
+
+### 1. open a real Lavish session for /private/tmp/fm-live-e2e.dKumDi/board.html
+url:  http://tonymac-mini.taile2f97c.ts.net:4387/session/04dd4d0a173d4452
+key:  04dd4d0a173d4452
+base: http://tonymac-mini.taile2f97c.ts.net:4387
+
+### 2. arm the process-event source (bin/fm-procevent-lavish.sh arm)
+registered: lavish-04dd4d0a173d4452 (lavish)
+armed: lavish-04dd4d0a173d4452
+artifact: /private/tmp/fm-live-e2e.dKumDi/board.html
+-- state/procevent listing:
+<ID>.source
+
+### 3. the captain queues feedback on the real session
+{"status":"queued","pending_prompts":1}
+
+### 4. one supervision round: the listener long-polls the real server
+not-autohandled: lavish-04dd4d0a173d4452 (left for the handler; still unacknowledged)
+captured: /private/tmp/fm-live-e2e.dKumDi/home/state/procevent-inbox/lavish-04dd4d0a173d4452.1.result
+-- captured results: 1
+-- wakes:
+   check: procevent lavish lavish-04dd4d0a173d4452 1
+-- captured body:
+   session:
+     file: /private/tmp/fm-live-e2e.dKumDi/board.html
+     status: feedback
+   prompts[1]{uid,prompt,selector,tag,text}:
+     u1,Please fix the title copy.,#title,message,Delivery board
+   next_step: "Apply the requested changes to /private/tmp/fm-live-e2e.dKumDi/board.html. Do not respond to the user just yet. Now you must run `lavish-axi poll /private/tmp/fm-live-e2e.dKumDi/board.html --agent-reply \"<message for the user>\"` without --timeout-ms unless the user ended the session. The poll waits silently until the user sends more feedback, ends the session, or leaves every review window disconnected past the reconnect grace period - never kill it. Keep the poll in the foreground by default and let it return the feedback directly to the agent. A background poll is allowed only through a harness-native tracked background-job facility whose completion result is guaranteed to resume or notify the same agent. Never use `nohup`, shell `&`, `disown`, redirected fire-and-forget processes, or a detached terminal without an explicit verified callback merely to keep polling alive. If the harness has no completion-aware background facility, use the foreground poll or first wire a verified wake callback into the surrounding supervisor. Do not tell the user the artifact is being monitored until that wake path is live. If the poll gets killed or times out before feedback arrives, re-run it - feedback remains queued until delivery. Poll delivery consumes the response, so read it completely. If it returns browser_disconnected, the review window stayed disconnected past its reconnect grace period but the session remains resumable; ask the user whether to reopen or end it, and do neither uninvited."
+   dom_snapshot: ""
+
+### 5. the captain sends feedback AND ends the session (Send & End)
+{"status":"queued","pending_prompts":1}
+
+### 6. the next supervision round captures the Send & End feedback
+not-autohandled: lavish-04dd4d0a173d4452 (left for the handler; still unacknowledged)
+captured: /private/tmp/fm-live-e2e.dKumDi/home/state/procevent-inbox/lavish-04dd4d0a173d4452.2.result
+-- captured results: 2
+-- source still registered: YES
+-- wakes:
+   check: procevent lavish lavish-04dd4d0a173d4452 1
+   check: procevent lavish lavish-04dd4d0a173d4452 2
+   check: procevent lavish lavish-04dd4d0a173d4452 1
+
+### 7. round on the now-ended session (the incident's failure step)
+no-result: lavish-04dd4d0a173d4452 (exit 3)
+-- captured results: 2
+-- source still registered: YES
+-- wakes:
+   check: procevent lavish lavish-04dd4d0a173d4452 1
+   check: procevent lavish lavish-04dd4d0a173d4452 2
+   check: procevent lavish lavish-04dd4d0a173d4452 1
+
+### 8. the captain reopens the board (lavish-axi <board> --reopen)
+session:
+  file: /private/tmp/fm-live-e2e.dKumDi/board.html
+  url: "http://tonymac-mini.taile2f97c.ts.net:4387/session/04dd4d0a173d4452"
+  status: opened
+{"status":"queued","pending_prompts":1}
+
+### 9. the reopened board's feedback reaches firstmate
+not-autohandled: lavish-04dd4d0a173d4452 (left for the handler; still unacknowledged)
+captured: /private/tmp/fm-live-e2e.dKumDi/home/state/procevent-inbox/lavish-04dd4d0a173d4452.3.result
+-- captured results: 3
+-- source still registered: YES
+-- wakes:
+   check: procevent lavish lavish-04dd4d0a173d4452 1
+   check: procevent lavish lavish-04dd4d0a173d4452 2
+   check: procevent lavish lavish-04dd4d0a173d4452 1
+   check: procevent lavish lavish-04dd4d0a173d4452 3
+   check: procevent lavish lavish-04dd4d0a173d4452 1
+   check: procevent lavish lavish-04dd4d0a173d4452 2
+-- third capture body:
+   session:
+     file: /private/tmp/fm-live-e2e.dKumDi/board.html
+     status: feedback
+   prompts[1]{uid,prompt,selector,tag,text}:
+     u3,"One more round, captain is back.",#title,message,Delivery board
+   next_step: "Apply the requested changes to /private/tmp/fm-live-e2e.dKumDi/board.html. Do not respond to the user just yet. Now you must run `lavish-axi poll /private/tmp/fm-live-e2e.dKumDi/board.html --agent-reply \"<message for the user>\"` without --timeout-ms unless the user ended the session. The poll waits silently until the user sends more feedback, ends the session, or leaves every review window disconnected past the reconnect grace period - never kill it. Keep the poll in the foreground by default and let it return the feedback directly to the agent. A background poll is allowed only through a harness-native tracked background-job facility whose completion result is guaranteed to resume or notify the same agent. Never use `nohup`, shell `&`, `disown`, redirected fire-and-forget processes, or a detached terminal without an explicit verified callback merely to keep polling alive. If the harness has no completion-aware background facility, use the foreground poll or first wire a verified wake callback into the surrounding supervisor. Do not tell the user the artifact is being monitored until that wake path is live. If the poll gets killed or times out before feedback arrives, re-run it - feedback remains queued until delivery. Poll delivery consumes the response, so read it completely. If it returns browser_disconnected, the review window stayed disconnected past its reconnect grace period but the session remains resumable; ask the user whether to reopen or end it, and do neither uninvited."
+   dom_snapshot: ""
+
+### 10. explicit retirement still cleans up
+retired: lavish-04dd4d0a173d4452
+-- source present after retire: NO
+
+### cleanup
+LAB=/private/tmp/fm-live-e2e.dKumDi

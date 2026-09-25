@@ -1,0 +1,56 @@
+{
+  "base_agents_nonblank_lines": 536,
+  "removed_nonblank": 178,
+  "present_verbatim_in_target_tree": 166,
+  "differing": [
+    {
+      "line": "`docs/configuration.md` is the single owner of the top-level operational-home layout and configuration schemas; each producing script's header and help own exact child fields and mutation mechanics.",
+      "classification": "round-3/4 authorized wording narrowing (ownership/overstatement)"
+    },
+    {
+      "line": "  when/              private condition->action watch specs, their trust bindings, and single-fire markers; written only by bin/fm-procevent-when.sh (section 13's process-event-sources trigger)",
+      "classification": "round-1 authorized repoint (now in home-layout, names agent-only-skills)"
+    },
+    {
+      "line": "Establish model support and provider family from that harness's own authoritative catalog, then apply the [account and scope matching rules in `quota-array-dispatch`](.agents/skills/quota-array-dispatch/SKILL.md#1-eligibility).",
+      "classification": "the one relocated relative markdown link, rewritten for the deeper skill dir"
+    },
+    {
+      "line": "Every captain-facing message must translate internal state into the project outcome, consequence, and next decision.",
+      "classification": "e3 section-9 bullet rewrite (in place, authorized)"
+    },
+    {
+      "line": "On every harness, whenever a turn calls for a captain-facing reply, its **final response message** must stand alone with all key information from the whole turn: outcomes, consequences, any decision or approval needed, and relevant URLs or identifiers, even if already stated in a mid-turn or pre-tool message.",
+      "classification": "e3 section-9 bullet rewrite (in place, authorized)"
+    },
+    {
+      "line": "The captain may see only the final message; repeat the essentials there, not the full transcript or anchor.",
+      "classification": "e3 section-9 bullet rewrite (in place, authorized)"
+    },
+    {
+      "line": "This final-message rule is a visibility recap: it may list all outstanding decisions and their URLs, but it does not override, replace, or combine any separate per-decision ask messages required by a harness's no-batching rule.",
+      "classification": "e3 section-9 bullet rewrite (in place, authorized)"
+    },
+    {
+      "line": "Protocol regression example: reporting a completed fix and its recorded PR URL mid-turn, then using tools and ending with only `Awaiting your merge call.`, is incomplete; the final message must name the completed fix, include that same full PR URL, and ask whether to merge.",
+      "classification": "e3 section-9 bullet rewrite (in place, authorized)"
+    },
+    {
+      "line": "Use the captain's nouns: the investigation, the scout, the fix, the PR, the review, the decision, the blocker, the credential, the local copy, the worker, or the project.",
+      "classification": "e3 section-9 bullet rewrite (in place, authorized)"
+    },
+    {
+      "line": "Do not expose internal terms such as startup machinery, locks, watchers, polling, crewmates, task ids, briefs, worktrees, checkouts, status or metadata files, teardown, promotion, harness names, runtime backend names, context budgets, delivery-mode names, autonomy flags, wake types, status prefixes, decision holds, pipeline step names, validation-state labels, or compressed safety labels such as fail-closed, fails closed, fail-open, fails open, fail loudly, or close variants.",
+      "classification": "e3 section-9 bullet rewrite (in place, authorized)"
+    },
+    {
+      "line": "Scout and second mate are accepted Firstmate nautical house vocabulary and do not need translation when they naturally name that work or role.",
+      "classification": "e3 section-9 bullet rewrite (in place, authorized)"
+    },
+    {
+      "line": "When evidence uses an internal label, rewrite it before sending:",
+      "classification": "e3 section-9 bullet rewrite (in place, authorized)"
+    }
+  ],
+  "unaccounted": 0
+}

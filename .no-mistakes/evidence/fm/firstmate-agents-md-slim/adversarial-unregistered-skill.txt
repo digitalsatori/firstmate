@@ -1,0 +1,3 @@
+== adversarial: unregister the new home-layout skill from the inventory, real consumer must reject ==
+fm-doc-audience-check: unclassified: .agents/skills/home-layout/SKILL.md
+rc=1

@@ -1,0 +1,21 @@
+== AGENTS.md section heading sequence identical (numbering, titles, order) ==
+True -> PASS
+
+== per-section byte identity base vs target ==
+SAFETY IDENTICAL sha256=ba0f2da832d4fa35 ## 1. Identity and prime directives
+       changed   sha256=c8b559ecf5253674 ## 2. Layout and state
+       IDENTICAL sha256=c4e55ae16841519a ## 3. Session start (run once at every session start)
+       changed   sha256=e1b3293209509305 ## 4. Harness and runtime dispatch
+SAFETY IDENTICAL sha256=ffc9b59f5d7a07e8 ## 5. Recovery
+SAFETY IDENTICAL sha256=612dfc407d03a2b1 ## 6. Project and knowledge management
+       IDENTICAL sha256=774a730e51675b69 ## 7. Task lifecycle
+SAFETY IDENTICAL sha256=63ea67df1fa98adb ## 8. Supervision protocol
+       changed   sha256=31d789462bb93207 ## 9. Escalation and captain etiquette
+       IDENTICAL sha256=71a5d822874507ec ## 10. Backlog contract
+       changed   sha256=87915a41d4c57dba ## 11. Crewmate briefs
+       changed   sha256=d91884407763649f ## 12. Self-update
+       changed   sha256=f2358efa93152b3f ## 13. Agent-only reference skills
+       changed   sha256=25b0ae0e0920bb49 ## 14. Relay
+
+== hard rules inside section 1 ==
+section 1 byte-identical, hard-rules block: check manually

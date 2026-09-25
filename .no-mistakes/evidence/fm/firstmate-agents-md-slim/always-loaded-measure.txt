@@ -1,0 +1,44 @@
+== base commit c643b57 (extracted tree) ==
+{
+  "root": "/tmp/fm_base_tree",
+  "agentsBytes": 89444,
+  "agentsTokens": 22361,
+  "skillCount": 21,
+  "descriptionTokens": 2481,
+  "alwaysLoadedTokens": 24842,
+  "newSkills": []
+}
+
+== target commit cb2d56d (worktree) ==
+{
+  "root": "/Users/tony/.no-mistakes/worktrees/9dab86943ee0/01M3C1J294KRT11SZ08VMEQGEF",
+  "agentsBytes": 57932,
+  "agentsTokens": 14483,
+  "skillCount": 25,
+  "descriptionTokens": 2713,
+  "alwaysLoadedTokens": 17196,
+  "newSkills": [
+    {
+      "name": "agent-only-skills",
+      "descTokens": 53
+    },
+    {
+      "name": "crewmate-briefs",
+      "descTokens": 52
+    },
+    {
+      "name": "dispatch-profiles",
+      "descTokens": 65
+    },
+    {
+      "name": "home-layout",
+      "descTokens": 62
+    }
+  ]
+}
+
+== reduction ==
+base always-loaded  = 24842 tokens (AGENTS.md 22361 + skill descriptions 2481)
+target always-loaded= 17196 tokens (AGENTS.md 14483 + skill descriptions 2713)
+delta = -7646 (-30.8%)  proposal projected delta = -7614 (-30.8%)
+estimator = backpass src/tokens.js: ceil(UTF-8 bytes / 4), same estimator proposal used

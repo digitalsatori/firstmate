@@ -1,0 +1,13 @@
+== relocated link ==
+17:Establish model support and provider family from that harness's own authoritative catalog, then apply the [account and scope matching rules in `quota-array-dispatch`](../quota-array-dispatch/SKILL.md#1-eligibility).
+stale shallower path present in tree: 0
+anchor target:
+64:### 1. Eligibility
+
+== bin/ diff: only comment lines touched ==
+-#          procedure in AGENTS.md section 4 and
++#          procedure in .agents/skills/dispatch-profiles/SKILL.md and
+-# provider - is owned by AGENTS.md section 4 and the quota-array-dispatch skill,
++# provider - is owned by the dispatch-profiles and quota-array-dispatch skills,
+-    # AGENTS.md section 4 forbids selecting max without captain preference and
++    # the dispatch-profiles skill forbids selecting max without captain preference and

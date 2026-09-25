@@ -22,7 +22,7 @@ Before writing a new fact anywhere in this repo, ask where it belongs, in this o
 1. Does the firstmate AGENT need this on every session or every turn to operate?
    If yes: `AGENTS.md`, inline.
 2. Does the agent need it only in a nameable situation - a spawn, a recovery, a specific wake type, a specific lifecycle step?
-   If yes: an agent-only skill under `.agents/skills/` that declares its load trigger as a load condition in its own `description:` line; `AGENTS.md` section 13 points to the consolidated `agent-only-skills` trigger table as a discoverability aid for when the right one is unclear.
+   If yes: an agent-only skill under `.agents/skills/` that declares its load trigger as a load condition in its own `description:` line; `AGENTS.md` section 13 points to the `agent-only-skills` trigger index as a discoverability aid for when the right one is unclear.
 3. Is it public product, setup, or user/operator reference?
    If yes: the surface classified for that audience in [`docs/documentation-audiences.md`](../../../docs/documentation-audiences.md), limited to current behavior, setup, supported limits, stable invariants, concise rationale, and current verification entry points.
 4. Is it contributor/maintainer architecture?

@@ -1,7 +1,7 @@
 ---
 name: home-layout
 description: >-
-  Operational-home layout reference: every top-level entry and every state/ record with its owner and touch rules. Load before creating, reading, moving, or deleting any file under data/, state/, config/, projects/, or .no-mistakes/, or before interpreting any task status, metadata, check, poll, inbox, lease, or afk record.
+  Operational-home layout reference. Load before creating, reading, moving, or deleting any file under data/, state/, config/, projects/, or .no-mistakes/, or before interpreting any task status, metadata, check, poll, inbox, lease, or afk record.
 user-invocable: false
 metadata:
   internal: true

@@ -68,7 +68,7 @@ Other transient consumers retain their existing shell-relative behavior.
 
 ## Operational home layout and state
 
-This section owns the operator-facing summary of the top-level operational-home layout and the configuration schemas, while the exhaustive per-entry inventory - every top-level entry and every `state/` record with its owner and touch rules - lives in `.agents/skills/home-layout/SKILL.md`.
+This section owns the operator-facing summary of the top-level operational-home layout and the configuration schemas, while the operational-home layout reference lives in `.agents/skills/home-layout/SKILL.md`.
 Producer script headers and their help own exact child-file fields and mutation contracts.
 The tracked code root contains shared instructions, skills, documentation, workflows, and `bin/`.
 Each effective `FM_HOME` contains private operational directories.

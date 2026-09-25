@@ -113,6 +113,10 @@
       "audience": "agent-runtime"
     },
     {
+      "path": ".agents/skills/agent-only-skills/SKILL.md",
+      "audience": "agent-runtime"
+    },
+    {
       "path": ".agents/skills/ahoy/SKILL.md",
       "audience": "agent-runtime"
     },
@@ -133,11 +137,19 @@
       "audience": "agent-runtime"
     },
     {
+      "path": ".agents/skills/crewmate-briefs/SKILL.md",
+      "audience": "agent-runtime"
+    },
+    {
       "path": ".agents/skills/decision-hold-lifecycle/SKILL.md",
       "audience": "agent-runtime"
     },
     {
       "path": ".agents/skills/diagnostic-reasoning/SKILL.md",
+      "audience": "agent-runtime"
+    },
+    {
+      "path": ".agents/skills/dispatch-profiles/SKILL.md",
       "audience": "agent-runtime"
     },
     {
@@ -226,6 +238,10 @@
     },
     {
       "path": ".agents/skills/harness-adapters/references/harness/rovo.md",
+      "audience": "agent-runtime"
+    },
+    {
+      "path": ".agents/skills/home-layout/SKILL.md",
       "audience": "agent-runtime"
     },
     {

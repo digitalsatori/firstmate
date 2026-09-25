@@ -453,7 +453,7 @@ When the captain invokes `/updatefirstmate` or asks to update firstmate, load th
 
 ## 13. Agent-only reference skills
 
-These skills are not captain-invocable; each one's own `description:` line is its load trigger, and `.agents/skills/agent-only-skills/SKILL.md` carries the consolidated trigger table for when the right one is unclear.
+These skills are not captain-invocable; an agent-only skill declares its load condition in its own `description:` line, and `.agents/skills/agent-only-skills/SKILL.md` indexes the reference skills it lists for when the right one is unclear.
 
 ## 14. Relay
 

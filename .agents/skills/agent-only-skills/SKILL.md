@@ -1,6 +1,6 @@
 ---
 name: agent-only-skills
-description: Consolidated trigger table for Firstmate's agent-only reference skills. Load when a situation plausibly matches an agent-only skill but the specific one is unclear, or when verifying that a required load condition was met.
+description: Trigger index for Firstmate's agent-only reference skills. Load when a situation plausibly matches an agent-only skill but the specific one is unclear, or when verifying that a required load condition was met.
 user-invocable: false
 metadata:
   internal: true

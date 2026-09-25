@@ -209,7 +209,7 @@ Record the resulting mode, `yolo` merge posture, and the one-line reason for any
 Treat file or subsystem overlap as a risk signal rather than an automatic reason to wait, and dispatch isolated work immediately with no concurrency cap when each change can be independently implemented and validated and the selected delivery path can reconcile ordinary rebases or conflicts.
 Serialize only for a true semantic dependency, shared mutable external state, incompatible concurrent migration, or another concrete condition that makes independent progress or reconciliation unsafe; same-file editing alone is insufficient, and genuine blockers remain durable.
 Write the task-specific brief under section 11 before spawning.
-Fill the task subsections according to section 11.
+Fill the task subsections according to `crewmate-briefs`.
 
 ### Dispatch and supervision handoff
 
@@ -369,7 +369,7 @@ Each skill owns its own daemon procedure, which is otherwise identical; these sa
 
 ### Stuck-worker trigger
 
-For the full `stuck-crewmate-recovery` trigger, including a live worker claiming its no-mistakes pipeline is dead, unreachable, or timed out, follow section 13.
+For the full `stuck-crewmate-recovery` trigger, including a live worker claiming its no-mistakes pipeline is dead, unreachable, or timed out, load `stuck-crewmate-recovery`.
 
 ## 9. Escalation and captain etiquette
 
